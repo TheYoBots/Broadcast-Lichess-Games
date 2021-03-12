@@ -1,0 +1,14 @@
+{
+  "name": "expresshelloworld",
+  "version": "1.0.0",
+  "description": "Express hello world app.",
+  "main": "server.js",
+  "repository": "https://github.com/browsercaptures/expresshelloworld",
+  "author": "Browser Captures",
+  "license": "MIT",
+  "private": null,
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}

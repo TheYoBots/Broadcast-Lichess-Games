@@ -1,4 +1,5 @@
-# relaylichessgames
+# Broadcast Lichess Games
+
 Relay lichess games.
 
 ## Configuration

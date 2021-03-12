@@ -1,6 +1,6 @@
 # Broadcast Lichess Games
 
-Relay lichess games.
+An easy way to Broadcast/Relay lichess games from a live url using heroku.
 
 ## Configuration
 

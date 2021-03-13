@@ -12,7 +12,7 @@ An easy way to Broadcast/Relay lichess games from a live url using heroku.
 
 ### Configuration Variables
 
-Set the following environment variables ( Heroku config vars ) in heroku.
+Set the following environment variables ( Heroku Config Vars ) in heroku.
 
 **Do note that all the variables mentioned below are in the format `key=value`**
 

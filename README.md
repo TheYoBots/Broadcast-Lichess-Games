@@ -2,7 +2,15 @@
 
 An easy way to Broadcast/Relay lichess games from a live url using heroku.
 
-## Configuration Variables
+## How to Use
+
+- Fork this repository on GitHub.
+- Login/Sign up to [heroku](https://signup.heroku.com) Create a new [heroku app](https://dashboard.heroku.com/new-app).
+- Go to the `Deploy` tab in heroku and click `Connect to GitHub` (Make sure your GitHub account is authorised to access heroku).
+- Click on `search` and select your fork of this repository.
+- Then go to the `Settings` in heroku and scroll down and click on `Reveal Config Vars` and add the necessary Config Vars from [here](https://github.com/TheYoBots/Broadcast-Lichess-Games#configuration-variables).
+
+### Configuration Variables
 
 Set the following environment variables ( Heroku config vars ) in heroku.
 

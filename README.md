@@ -2,30 +2,32 @@
 
 An easy way to Broadcast/Relay lichess games from a live url using heroku.
 
-## Configuration
+## Configuration Variables
 
-Set environment variables ( Heroku config vars ) as follows.
+Set the following environment variables ( Heroku config vars ) in heroku.
 
-### RELAY_URL
+**Do note that all the variables mentioned below are in the format `key=value`**
 
-Your PGN source url.
+**`RELAY_URL`**
 
-### TOKEN
+Your PGN source url. For live broadcasts, you need the live PGN url.
 
-Your lichess API access token ( required if you want to relay your ongoing games ).
+**`TOKEN`**
 
-### MAX_GAMES
+Your [Lichess API Access Token](https://lichess.org/account/oauth/token/create?). This is required if you want to relay your ongoing games or live games.
+
+**`MAX_GAMES`**
 
 Maximum number of your ongoing games to relay ( default : 1 ).
 
-### BROADCAST_ID
+**`BROADCAST_ID`**
 
-Broadcast id of your lichess broadcast.
+Broadcast id of your Lichess Broadcast.
 
 ## Usage
 
 Start server with `node server.js`.
 
-Endpoint `/` path will relay the games you specified in RELAY_URL.
+Endpoint `/` path will relay the games you specified in `RELAY_URL`.
 
-If you provide your API access token, then endpoint `/ongoing` will relay your ongoing games. An attempt will be made to initialize ongoing games from RELAY_URL if it is set. If you provide a BROADCAST_ID, then your ongoing games will be pushed to your broadcast ( in this case TOKEN must have broadcast scopes ).
+If you provide your API access token, then endpoint `/ongoing` will relay your ongoing games. An attempt will be made to initialize ongoing games from `RELAY_URL` if it is set. If you provide a `BROADCAST_ID`, then your ongoing games will be pushed to your broadcast ( in this case TOKEN must have broadcast scopes ).

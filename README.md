@@ -8,7 +8,10 @@ An easy way to Broadcast/Relay lichess games from a live url using heroku.
 - Login/Sign up to [heroku](https://signup.heroku.com) Create a new [heroku app](https://dashboard.heroku.com/new-app).
 - Go to the `Deploy` tab in heroku and click `Connect to GitHub` (Make sure your GitHub account is authorised to access heroku).
 - Click on `search` and select your fork of this repository.
+- Then `Enable Automatic Deploys` and then `Deploy Branch`. Make sure you choose the `master` branch to deploy.
 - Then go to the `Settings` in heroku and scroll down and click on `Reveal Config Vars` and add the necessary Config Vars from [here](https://github.com/TheYoBots/Broadcast-Lichess-Games#configuration-variables).
+- Now click on `Open app` in heroku and save this link as you will need it soon for your broadcast.
+- Now go to Lichess and [create a new broadcast](https://lichess.org/broadcast/new). Add your Event Name, Description and all other required details for your broadcast. In the `Source URL, or game IDs` field in your broadcast add the link that you had saved when you clicked on `Open app` in heroku. Now click on `SUBMIT` in lichess and then click `CLICK TO CONNECT` and your broadcast is now ready!!
 
 ### Configuration Variables
 

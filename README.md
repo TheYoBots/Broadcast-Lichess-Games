@@ -25,11 +25,11 @@ Your PGN source url. For live broadcasts, you need the live PGN url.
 
 If you would like to get the live games of a particular user set this to `https://lichess.org/api/user/<username>/current-game` where you replace `<username>` with the username whos live games you would like to get.
 
-To get your own live games, you can simply add the `TOKEN` config var, but this can be used to get another users live games or live games from a live PGN source.
+To get your own live games, you can simply add the `TOKEN` config var, but the above can be used to get another users live games or live games from a live PGN source.
 
 **`TOKEN`**
 
-Your [Lichess API Access Token](https://lichess.org/account/oauth/token/create?scopes[]=study:write&description=Broadcasting+Token). This is required if you want to relay your ongoing games or live games. Make sure broadcast scopes are selected.
+Your [Lichess API Access Token](https://lichess.org/account/oauth/token/create?scopes[]=study:write&description=Broadcasting+Token). This is required if you want to relay your ongoing games or live games. Make sure broadcast scopes are selected. Adding this increases the number of requests sent to lichess.
 
 **`MAX_GAMES`**
 
@@ -37,7 +37,7 @@ Maximum number of your ongoing games to relay `( default : 1 )`.
 
 **`BROADCAST_ID`**
 
-Broadcast id of your Lichess Broadcast. Your broadcast link should look something like `https://lichess.org/broadcast/<event-name>/<Broadcast ID>`. The digits in the place of `<Broadcast ID>` is what you place for this config var.
+Broadcast id of your Lichess Broadcast. Your broadcast link should look something like `https://lichess.org/broadcast/<event-name>/<Broadcast ID>`. The digits in the place of `<Broadcast ID>` is what you place for this config var. Adding this increases the number of requests to lichess.
 
 ## Usage
 

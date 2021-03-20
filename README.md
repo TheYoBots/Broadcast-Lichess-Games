@@ -49,4 +49,6 @@ If you provide your API access token, then endpoint `/ongoing` will relay your o
 
 **Note: Live games of a particular user of another user is made 3 moves behind by lichess to prevent cheating by using the live analysis feature. Attempting to do so using this will not work as this is taken directly from Lichess' API. All precautions have been taken against users using this for any kind of cheat methods.**
 
+**Note: Since Lichess Broadcast updates to the link every 3-5 seconds, all moves in fast games (bullet and blitz) will take longer to update.
+
 **Also using this under your own name without providing credits to the Author is completely discouraged. This Repositiory is run under the MIT License.**

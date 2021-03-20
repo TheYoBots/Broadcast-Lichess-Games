@@ -29,7 +29,7 @@ To get your own live games, you can simply add the `TOKEN` config var, but the a
 
 **`TOKEN`**
 
-Your [Lichess API Access Token](https://lichess.org/account/oauth/token/create?scopes[]=study:write&description=Broadcasting+Token). This is required if you want to relay your ongoing games or live games. Make sure broadcast scopes are selected. Adding this increases the number of requests sent to lichess.
+Your [Lichess API Access Token](https://lichess.org/account/oauth/token/create?scopes[]=study:write&description=Broadcasting+Token). This is required if you want to relay your ongoing games or live games. Make sure broadcast scopes are selected. Adding this increases the number of requests sent to lichess. 
 
 **`MAX_GAMES`**
 
@@ -46,3 +46,7 @@ Server is started with `node server.js`.
 Endpoint `/` path will relay the games you specified in `RELAY_URL`.
 
 If you provide your API access token, then endpoint `/ongoing` will relay your ongoing games. An attempt will be made to initialize ongoing games from `RELAY_URL` if it is set. If you provide a `BROADCAST_ID`, then your ongoing games will be pushed to your broadcast ( in this case `TOKEN` must have broadcast scopes ).
+
+**Note: Live games of a particular user of another user is made 3 moves behind by lichess to prevent cheating by using the live analysis feature. Attempting to do so using this will not work as this is taken directly from Lichess' API. All precautions have been taken against users using this for any kind of cheat methods.**
+
+**Also using this under your own name without providing credits to the Author is completely discouraged. This Repositiory is run under the MIT License.**
